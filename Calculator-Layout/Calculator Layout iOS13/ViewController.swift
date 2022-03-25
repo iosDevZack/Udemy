@@ -1,8 +1,9 @@
 //
 //  ViewController.swift
-//  Calculator-Layout
+//  Calculator Layout iOS13
 //
-//  Created by Женя  on 25.03.22.
+//  Created by Angela Yu on 01/07/2019.
+//  Copyright © 2019 The App Brewery. All rights reserved.
 //
 
 import UIKit
