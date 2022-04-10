@@ -23,16 +23,28 @@ struct StoryBrain {
     
     var questionNumber = 0
     
+    // Вопрос
     func getQuestionText() -> String {
         return quiz[questionNumber].text
     }
     
+    
+    // Ответ верхней кнопки
     func getAnswerQuestion1() -> String {
         return quiz[questionNumber].answer1
     }
     
+    // Ответ нижней кнопки
     func getAnswerQuestion2() -> String {
         return quiz[questionNumber].answer2
+    }
+    // Следующий вопрос
+    mutating func nextQuestion() {
+        if questionNumber + 1 < quiz.count {
+            questionNumber += 1
+        } else {
+            questionNumber = 0
+        }
     }
     
     

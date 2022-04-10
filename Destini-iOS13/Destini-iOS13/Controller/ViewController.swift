@@ -18,13 +18,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
+        
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
+        
+        let userAnswer = sender.currentTitle
+        
+        
+        storyBrain.nextQuestion()
+        
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
-    func updateUI() {
+  @objc func updateUI() {
         storyLabel.text = storyBrain.getQuestionText()
         choice1Button.setTitle(storyBrain.getAnswerQuestion1(), for: .normal)
         choice2Button.setTitle(storyBrain.getAnswerQuestion2(), for: .normal)
