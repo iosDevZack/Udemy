@@ -9,13 +9,9 @@
 import Foundation
 
 struct Story {
-    var text: String
-    let answer1: String
-    let answer2: String
-    
-    init(text: String, answer1: String, answer2: String) {
-        self.text = text
-        self.answer1 = answer1
-        self.answer2 = answer2
-    }
+    let title: String
+    let choice1: String
+    let choice1Destination: Int
+    let choice2: String
+    let choice2Destination: Int
 }

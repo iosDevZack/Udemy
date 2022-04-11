@@ -25,9 +25,11 @@ class ViewController: UIViewController {
     
     @IBAction func choiceMade(_ sender: UIButton) {
         
-        storyBrain.nextQuestion()
+        storyBrain.nextQuestion(userChoice: sender.currentTitle!)
         
-        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        updateUI()
+        
+//        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
   @objc func updateUI() {
