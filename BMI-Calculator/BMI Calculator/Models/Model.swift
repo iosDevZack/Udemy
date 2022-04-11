@@ -1,5 +1,5 @@
 //
-//  Model.swift
+//  Models.swift
 //  BMI Calculator
 //
 //  Created by Женя  on 11.04.22.
