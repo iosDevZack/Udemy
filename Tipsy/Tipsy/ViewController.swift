@@ -2,7 +2,8 @@
 //  ViewController.swift
 //  Tipsy
 //
-//  Created by Женя  on 20.04.22.
+//  Created by Angela Yu on 09/09/2019.
+//  Copyright © 2019 The App Brewery. All rights reserved.
 //
 
 import UIKit
