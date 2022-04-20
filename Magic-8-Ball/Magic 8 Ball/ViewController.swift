@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = #imageLiteral(resourceName: "ball1")
+        imageView.image = #imageLiteral
         
     }
     
